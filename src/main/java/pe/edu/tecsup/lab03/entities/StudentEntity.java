@@ -1,5 +1,5 @@
 package pe.edu.tecsup.lab03.entities;
-
+import java.time.LocalDate;
 public class StudentEntity {
 
     private Long id;
@@ -27,6 +27,22 @@ public class StudentEntity {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Integer getAge() {
+        Integer age;
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        if (age != null && age < 0) {
+            throw new IllegalArgumentException("La edad no puede ser negativa");
+        }
+        this.age = age;
+    }
+
+    public LocalDate getEnrollmentDate() {
+        return enrollmentDate;
     }
 
 
