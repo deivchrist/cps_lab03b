@@ -1,5 +1,4 @@
 package pe.edu.tecsup.lab03.entities;
-
 public class StudentEntity {
 
     private Long id;
@@ -28,4 +27,5 @@ public class StudentEntity {
     public void setName(String name) {
         this.name = name;
     }
+
 }
